@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    // "use strict"
+      c = 10;
+    let a = 10;
+    console.log(a);
+    // document.write(a);
+
+    function hii(){
+        console.log("Hii How Are You!");
+    }
+    hii();
+    hello =()=>{
+        console.log("Good Morning");
+    }
+    hello();
+    let obj = {
+        Number:123,
+        Boolean:true,
+        func:function myfunc1(number) {
+            console.log("This Number is:"+ number);
+        }
+    }
+    console.log(obj);
+
+    document.addEventListener("click",function click(){
+        console.log("clicked");
+        // alert("Hello");
+        let conf = confirm("Are You sure?");
+        console.log(conf);
+    })
+
+    let arr = [10,20,30,40];
+    console.log(arr.reverse);
+
+    console.log(this);
+
+    let eobj = {
+        a:this,
+        myfunc:(number)=>{
+        console.log(this);
+    }
+    }
+    eobj.myfunc(12);
+    console.log(eobj.a);
+    
+    // setTimeout(() => {
+    //     console.log("Yayyyyyyy");
+    // }, 5000);
+    // console.log("Firstly this line Print and after setTimeOut");
+
+
+    let objnew = {name:"Aakash",Rollno:62,a:{dob:"12/10/2003"}};
+      hello1 = JSON.stringify(objnew);
+      console.log(hello1);
+      console.log(typeof hello1);
+
+      a = 90;
+      b = 50;
+      console.log(`Hello ${a}${b}`); // Converting into string
+      console.log(typeof `Hello ${a}${b}`);
+
+</script>
+<body>
+    <h1>Click here!</h1>
+</body>
+</html>
